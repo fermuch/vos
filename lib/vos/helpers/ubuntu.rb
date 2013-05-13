@@ -51,9 +51,9 @@ module Vfs
       raise "#{entry.path} can't be a File!" if entry.file?
 
       if local? and !entry.local?
-        Box.local.bash("rsync -e 'ssh' -al --delete --stats --progress #{path}/ root@#{entry.driver.host}:#{entry.path}")
+        Box.local.exec("rsync -e 'ssh' -al --delete --stats --progress #{path}/ root@#{entry.driver.host}:#{entry.path}")
       elsif entry.local? and !local?
-        Box.local.bash("rsync -e 'ssh' -al --delete --stats --progress root@#{driver.host}:#{path}/ #{entry.path}")
+        Box.local.exec("rsync -e 'ssh' -al --delete --stats --progress root@#{driver.host}:#{path}/ #{entry.path}")
       else
         raise "invalid usage!"
       end
