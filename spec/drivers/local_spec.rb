@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'drivers/spec_helper'
 
 describe Vos::Drivers::Local do

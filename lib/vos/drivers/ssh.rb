@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'net/ssh'
 require 'net/sftp'
 require 'vos/drivers/ssh_vfs_storage'

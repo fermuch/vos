@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Ssh
   attr_reader :config
 

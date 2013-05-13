@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'aws'
 require 'vos/drivers/s3_vfs_storage'
 

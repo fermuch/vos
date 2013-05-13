@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 raise 'ruby 1.9.2 or higher required!' if RUBY_VERSION < '1.9.2'
 
 require 'vos/gems'

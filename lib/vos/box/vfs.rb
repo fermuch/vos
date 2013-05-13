@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Vos
   class Box
     module Vfs

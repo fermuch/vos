@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 shared_examples_for 'vos driver' do
   it 'should respond to :host' do
     @driver.host.should_not be_nil
